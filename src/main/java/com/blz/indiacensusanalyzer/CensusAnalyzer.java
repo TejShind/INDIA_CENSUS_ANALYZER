@@ -27,10 +27,8 @@ public class CensusAnalyzer {
             return numOfEntries;
 
         } catch (IOException e) {
-            throw new CensusAnalyzerException(e.getMessage(), CensusAnalyzerException.ExceptionType.CENSUS_FILE_PROBLEM);
+            throw new CensusAnalyzerException(e.getMessage(), CensusAnalyzerException.ExceptionType.INCORRECT_FILE_DATA);
 
-        } catch (NumberFormatException e) {
-            throw new CensusAnalyzerException(e.getMessage(),CensusAnalyzerException.ExceptionType.TYPE_INCORRECT);
         }
     }
 }

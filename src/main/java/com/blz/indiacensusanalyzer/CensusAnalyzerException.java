@@ -11,7 +11,8 @@ public class CensusAnalyzerException extends Exception {
     }
 
     public enum ExceptionType {
-        CENSUS_FILE_PROBLEM,TYPE_INCORRECT
+        CENSUS_FILE_PROBLEM,TYPE_INCORRECT,INCORRECT_FILE_DATA
+
     }
 
 
